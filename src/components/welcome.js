@@ -1,7 +1,10 @@
 import React from 'react';
 
-function Test(){
-    return <div>welcome from function component.</div>;
+function Test(props){
+    return <div>
+        welcome {props.name +' '+props.lastName} from function component.
+        <p>{props.children}</p>
+    </div>;
 }
 
 export default Test;
