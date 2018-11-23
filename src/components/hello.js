@@ -28,13 +28,26 @@ class Hello extends Component {
         this.setState({age: this.state.age + 1});
     }
 
+    updateName(event){
+        const newName = event.target.value;
+
+        this.setState({
+            user: {
+                ...this.state.user,
+                name: newName
+            }
+        });
+    }
+
     render(){
         return <div>
             Hello {this.props.name} from class component.
-            <p>{this.state.user.name} Age: {this.state.age}</p>
+            <p>{this.state.user.name} {this.state.user.lastName} Age: {this.state.age}</p>
             <button onClick={()=>{this.setState({age: this.state.age + 1}) }}>Increase</button>
             <button onClick={this.decrement}>Decrease</button>
             <button onClick={this.increase}>Increase with function</button>
+            <br/>
+            <input type="text" value={this.state.user.name} onChange={this.updateName.bind(this)} />
         </div>
     }
 
