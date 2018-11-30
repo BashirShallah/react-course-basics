@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Welcome from "./components/welcome";
 import Hello from "./components/hello";
 import Lists from "./components/lists";
+import Conditions from "./components/Conditions";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Welcome name="bashir" lastName="shallah">Description</Welcome>
         <Hello name="bashir" />
         <Lists />
+        <Conditions />
       </div>
     );
   }
