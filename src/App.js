@@ -9,10 +9,15 @@ class App extends Component {
     return (
       <div className="App">
         Welcome from App.
+        <hr />
         <Welcome name="bashir" lastName="shallah">Description</Welcome>
+        <hr />
         <Hello name="bashir" />
+        <hr />
         <Lists />
+        <hr />
         <Conditions />
+        <hr />
       </div>
     );
   }
