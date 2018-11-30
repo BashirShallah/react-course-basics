@@ -3,6 +3,7 @@ import Welcome from "./components/welcome";
 import Hello from "./components/hello";
 import Lists from "./components/lists";
 import Conditions from "./components/Conditions";
+import LifeCycleExample from "./components/LifeCycleExample";
 
 class App extends Component {
   render() {
@@ -17,6 +18,8 @@ class App extends Component {
         <Lists />
         <hr />
         <Conditions />
+        <hr />
+        <LifeCycleExample />
         <hr />
       </div>
     );
